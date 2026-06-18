@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+venv/
+venv.bak/
+
+# System
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Project-specific
+calvo/tmp/
+*.log

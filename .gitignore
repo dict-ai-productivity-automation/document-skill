@@ -1,36 +1,25 @@
-# Python artifacts
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.pyo
-*.pyd
-*.pyc
 
-# Virtual environments
-venv/
+# Environments
+.env
+.venv
 env/
-.venv/
-.env/
+venv/
+ENV/
 
-# Python packaging
-build/
-dist/
-*.egg-info/
-pip-wheel-metadata/
-
-# Editor directories and files
-.vscode/
+# IDEs
 .idea/
+.vscode/
 *.swp
 *.swo
-*.DS_Store
 
-# Generated document outputs
+# OS generated files
+.DS_Store
+Thumbs.db
 
-*.zip
-generated_docx_package/
-
-# Logs and temporary files
-*.log
-*.tmp
-*.bak
+# Project specific
+*.docx
+~$*.docx

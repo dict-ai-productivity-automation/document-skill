@@ -1,11 +1,5 @@
-# Dependency directories
 node_modules/
 
-# Build outputs
-dist/
-*.tsbuildinfo
-
-
-# OS metadata files
-.DS_Store
-Thumbs.db
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "document-generator",
+  "instructions": ["rapista/AGENTS.md"],
+  "skills": {
+    "paths": ["rapista/skills"]
+  },
+  "agent": {
+    "document-generator": {
+      "model": "anthropic/claude-sonnet-4-6",
+      "mode": "primary",
+      "description": "Generates .docx files from structured content using the docx skill"
+    }
+  }
+}

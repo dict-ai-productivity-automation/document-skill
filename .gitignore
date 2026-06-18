@@ -1,29 +1,25 @@
-# Python
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-venv/
+
+# Environments
+.env
+.venv
 env/
+venv/
 ENV/
 
-# Output directory (generated documents)
-lasafin/output/*.docx
-
-# IDE
-.vscode/
+# IDEs
 .idea/
+.vscode/
 *.swp
 *.swo
 
-# OS
+# OS generated files
 .DS_Store
 Thumbs.db
 
-# Environment
-.env
-.env.local
-
-# Logs
-*.log
+# Project specific
+*.docx
+~$*.docx

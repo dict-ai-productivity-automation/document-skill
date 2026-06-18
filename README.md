@@ -4,14 +4,14 @@ Build `.docx` documents using composable skill modules. Each module (cover, TOC,
 
 ## Quick Start
 
-```
-pip install python-docx
-python build_doc.py --config sample_config.yml
+```bash
+npm install docx yaml
+node build_node.js --config sample_config.yml
 ```
 
 ## Structure
 
-- `build_doc.py` — CLI entry point
-- `docx_builder/` — builder package with composable modules
+- `build_node.js` — Node.js CLI entry point
+- `nodejs_builder/` — builder package with composable modules
 - `skills/docx/SKILL.md` — skill instructions for AI agents
 - `output/` — generated documents

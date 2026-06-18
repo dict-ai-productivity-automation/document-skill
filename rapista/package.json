@@ -1,0 +1,19 @@
+{
+  "name": "rapista",
+  "version": "1.0.0",
+  "description": "Document generator that builds .docx files using JavaScript/Node.js",
+  "main": "build_node.js",
+  "scripts": {
+    "build": "node build_node.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["docx", "document", "generator", "nodejs"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "docx": "^7.4.0",
+    "yaml": "^2.3.4"
+  }
+}
+}

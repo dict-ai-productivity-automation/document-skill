@@ -26,7 +26,7 @@ pip-wheel-metadata/
 *.DS_Store
 
 # Generated document outputs
-*.docx
+
 *.zip
 generated_docx_package/
 

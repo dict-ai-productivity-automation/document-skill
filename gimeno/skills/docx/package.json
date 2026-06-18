@@ -1,0 +1,11 @@
+{
+  "name": "docx-resume-generator",
+  "type": "module",
+  "scripts": {
+    "generate": "node src/generate-resume.mjs",
+    "research": "node src/generate-research.mjs"
+  },
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}

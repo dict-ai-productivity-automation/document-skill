@@ -1,0 +1,14 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "doc-generator",
+  "agent": {
+    "doc-generator": {
+      "model": "anthropic/claude-sonnet-4-6",
+      "mode": "primary",
+      "description": "Generates professional DOCX documents using the docx skill"
+    }
+  },
+  "skills": {
+    "paths": [".opencode/skills"]
+  }
+}

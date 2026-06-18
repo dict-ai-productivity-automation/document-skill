@@ -6,30 +6,31 @@ Use `ReportTemplate` for structured reports with:
 - Multiple sections with headings and body content
 - Tables, images, paragraphs per section
 
-```python
-from anecita import ReportTemplate
+```javascript
+const { ReportTemplate } = require('anecita');
 
-report = ReportTemplate(
-    title="Annual Report 2026",
-    author="Jane Doe",
-)
+const report = new ReportTemplate(
+    'Annual Report 2026',
+    'Jane Doe',
+);
 report.build([
     {
-        "heading": "Executive Summary",
-        "body": [
-            {"type": "paragraph", "text": "This quarter exceeded targets..."},
+        heading: 'Executive Summary',
+        body: [
+            { type: 'paragraph', text: 'This quarter exceeded targets...' },
         ],
     },
     {
-        "heading": "Revenue Breakdown",
-        "body": [
-            {"type": "table", "headers": ["Quarter", "Revenue"], "rows": [["Q1", "$50K"]]},
+        heading: 'Revenue Breakdown',
+        body: [
+            { type: 'table', headers: ['Quarter', 'Revenue'], rows: [['Q1', '$50K']] },
         ],
     },
-])
-report.builder.save("report.docx")
+]);
+report.builder.save('report.docx');
 ```
 
 ## Style Notes
-- Use `Colors.PRIMARY` for headings, `Colors.DARK` for body
-- Tables use `Table Grid` style with colored headers
+- Use `colors.PRIMARY` for headings, `colors.DARK` for body
+- Tables use centered alignment with colored headers
+- Import `docx.AlignmentType` for alignment options

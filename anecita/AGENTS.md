@@ -1,7 +1,7 @@
 # Agents
 
 ## docx-builder
-**Description**: Builds DOCX documents using python-docx. Handles document creation, styling, tables, images, and formatting.
+**Description**: Builds DOCX documents using Node.js and docx library. Handles document creation, styling, tables, images, and formatting.
 **Skills**: skill/docx/
 **Model**: deepseek-v4-flash-free
 

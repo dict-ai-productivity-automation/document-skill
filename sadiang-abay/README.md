@@ -1,15 +1,13 @@
-#  AGENTS
+# Academic DOCX Generator
 
-## Academic DOCX Generator - Agent Instructions
+A skill-based academic document generator that converts Markdown to professionally formatted `.docx` files.
 
-This document provides instructions for agents working on the Academic DOCX Generator project.
+## Overview
 
-## Project Overview
+The Academic DOCX Generator consists of:
 
-The Academic DOCX Generator is a skill-based academic document generator that converts Markdown to professionally formatted `.docx` files. The project consists of:
-
-- A Python CLI tool (`python-docx`) for document generation
-- A skill definition (`skill/docs/SKILL.md`) that guides AI assistants in writing structured academic Markdown and using the generator
+- A Python CLI tool (`generate.py`) for document generation
+- A skill definition (`SKILL.md`) that guides AI assistants in writing structured academic Markdown and using the generator
 
 ## Architecture
 
@@ -23,7 +21,7 @@ python generate.py converts Markdown → DOCX
 Output: formatted academic .docx
 ```
 
-## File Structure
+## Files
 
 - `skill/docs/SKILL.md` — Skill definition teaching how to write academic Markdown and use the generator
 - `skill/docs/generate.py` — Python CLI entry point
@@ -137,11 +135,27 @@ python generate.py input.md -o output.docx [options]
 - Integration test: sample.md → verify DOCX structure (sections, styles, TOC)
 - Style preset tests: APA/IEEE/MLA output matches expected formatting
 
----
+## Usage
 
-## Self-Review Notes
+1. Install dependencies:
+   ```bash
+   pip install -r skill/docs/requirements.txt
+   ```
 
-- No TBDs or TODOs
-- All sections internally consistent
-- Scope is focused: one generator, one skill, one input format
-- Requirements are explicit with no ambiguity
+2. Run the generator:
+   ```bash
+   python skill/docs/generate.py sample.md -o output.docx
+   ```
+
+3. View the generated DOCX file in Microsoft Word or other DOCX-compatible software.
+
+## Sample Input
+
+See `sample.md` for a complete example of the input format.
+
+## Testing
+
+Run the test suite:
+```bash
+python test_generator.py
+```

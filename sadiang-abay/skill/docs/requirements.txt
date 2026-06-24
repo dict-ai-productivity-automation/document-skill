@@ -1,0 +1,5 @@
+# Dependencies for Academic DOCX Generator
+
+python-docx>=0.8.11
+pyyaml>=6.0
+markdown>=3.4.3
